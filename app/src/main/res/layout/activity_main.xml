@@ -8,6 +8,153 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvEdu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Educational Apps"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="@id/tvEdu"
+                app:layout_constraintBottom_toBottomOf="@+id/tvEdu"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/eduRecView"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tvEdu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvBooks"
+                app:layout_constraintTop_toBottomOf="@id/eduRecView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Books &amp; Reference"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="@id/tvBooks"
+                app:layout_constraintBottom_toBottomOf="@+id/tvBooks"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:id="@+id/booksRecycleView"
+                app:layout_constraintTop_toBottomOf="@id/tvBooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvMedia"
+                app:layout_constraintTop_toBottomOf="@id/booksRecycleView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Arts &amp; Designs"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="@id/tvMedia"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMedia"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/artRecView"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tvMedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvFinance"
+                app:layout_constraintTop_toBottomOf="@id/artRecView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Media &amp; Films"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="@id/tvFinance"
+                app:layout_constraintBottom_toBottomOf="@id/tvFinance"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:id="@+id/media1RecycleView"
+                app:layout_constraintTop_toBottomOf="@id/tvFinance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvSuggest"
+                app:layout_constraintTop_toBottomOf="@id/media1RecycleView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Suggested For you"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="@id/tvSuggest"
+                app:layout_constraintBottom_toBottomOf="@id/tvSuggest"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:id="@+id/suggestForYou"
+                app:layout_constraintTop_toBottomOf="@id/tvSuggest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
